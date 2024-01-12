@@ -13,8 +13,10 @@ export const OwnedNfts = (props: {
 
     useEffect(() => {
         if (isLoggedIn) {
+            // noinspection JSIgnoredPromiseFromCall
             getAccountNfts()
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     if (isLoading || !accountNfts) {

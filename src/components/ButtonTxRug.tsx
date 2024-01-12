@@ -5,7 +5,6 @@ import {Address} from "@multiversx/sdk-core/out";
 import {sendTransactions} from "@multiversx/sdk-dapp/services";
 import {refreshAccount} from '@multiversx/sdk-dapp/utils/account/refreshAccount';
 import {useState} from "react";
-import {divergentClubCollection} from "../config/config.tsx";
 
 export const ButtonTxRug = (props: {
     collection: string,
@@ -27,7 +26,7 @@ export const ButtonTxRug = (props: {
         await refreshAccount();
 
         const transaction = rugContract.methods
-            .swap([divergentClubCollection])
+            .swap([collection])
             .withGasLimit(10_000_000)
             .withMultiESDTNFTTransfer(payments)
             .withSender(new Address(account.address))
@@ -41,8 +40,7 @@ export const ButtonTxRug = (props: {
                 successMessage: "Successful",
                 transactionDuration: 10000,
             },
-        })
-            .finally(() => setIsRugging(false))
+        }).finally(() => setIsRugging(false))
     }
 
     return (
