@@ -8,6 +8,7 @@ export const routes: RouteType[] = [
     {
         path: RouteNamesEnum.home,
         component: Collections,
+        authenticatedRoute: true,
     },
     {
         path: RouteNamesEnum.login,

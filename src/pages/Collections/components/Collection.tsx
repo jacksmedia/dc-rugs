@@ -9,13 +9,23 @@ export const Collection = (props: {
     const {isLoading, getCollection, collection} = useGetCollection(ticker)
 
     useEffect(() => {
+        // noinspection JSIgnoredPromiseFromCall
         getCollection()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
-    if (isLoading || !collection) {
+    if (isLoading) {
         return (
             <div>
                 Loading...
+            </div>
+        )
+    }
+
+    if (!collection) {
+        return (
+            <div>
+                Error loading collection {ticker} !
             </div>
         )
     }
