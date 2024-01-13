@@ -2,7 +2,7 @@
 
 interface ImportMetaEnv {
     readonly VITE_NETWORK_ENVIRONMENT: string
-    readonly VITE_DIVERGENT_CLUB_RUG_CONTRACT: string
+    readonly VITE_RUG_ROYALTIES_CONTRACT: string
 }
 
 interface ImportMeta {
