@@ -1,0 +1,77 @@
+html { // every page gets this
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    // align-content: center;
+    align-items: normal;
+    
+    max-height: 100vh;
+    min-height: 100vh;
+    height: 100vh;
+    
+    background: linear-gradient(snow,cornsilk, snow);
+}
+
+.login-panel { // MultiversX login buttons panel
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    
+    max-width: 75vw;
+    max-height: 70vh;
+    min-height: 70vh;
+    height: 70vh;
+
+    background: linear-gradient(cornsilk, mediumblue);
+    border-radius: 3rem;
+    padding: 2rem;
+        & :not(h1) { // to grab the login buttons
+            font-size: larger;
+            // background-color: black;
+            & :hover {
+                // background-color: blue;
+            }
+    }
+}
+.top-container {
+    background: white;
+    max-width: 80vw;  // 80% of the viewport width
+    max-height: 82vh; // 80% of the viewport height
+}
+.responsive-container {
+    background: white;
+    max-width: 80vw;  // 80% of the viewport width
+    max-height: 72vh; // 80% of the viewport height
+    display: flex;
+    flex-wrap: wrap;  // enables wrapping of items
+    align-items: flex-start; // aligns items to the start of the flex container
+    justify-content: flex-start; // aligns items to the start on the main axis
+    overflow-y: auto; // adds a scrollbar if content overflows along the y-axis
+  
+    // You may want to add padding, margins, or other styles as needed
+  }
+  
+  .item {
+    margin: 0.5rem;
+    width: calc(20% - 1rem); // Trial width
+
+  
+    .caption { // Styles for the caption of each NFT
+      text-align: center; 
+    }
+  }
+
+.header-box {
+    min-height: 11vh;
+    min-width: 100vw;
+    background: rgba($color: #000000, $alpha: 0.0);
+    padding-top: 3rem;
+    // background: crimson;
+}
+
+.footer-box {
+    min-height: 7vh;
+    min-width: 100vw;
+    background: rgba($color: #000000, $alpha: 0.0);
+    // background: crimson;
+}

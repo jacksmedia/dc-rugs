@@ -7,13 +7,16 @@ export const Nft = (props: {
     const {nft} = props;
 
     return (
-        <div>
+        <>
             {nft.media ? (
                 <img src={nft.media[0].thumbnailUrl} alt="" style={{maxWidth: '50px'}}/>
             ) : null}
-            <div>
-                {nft.name} - <ButtonTxRug collection={nft.collection} nftNonce={nft.nonce}/>
+            <div className="item">
+                <h5 className="caption">
+                    {nft.name}
+                </h5>
+                <ButtonTxRug collection={nft.collection} nftNonce={nft.nonce}/>
             </div>
-        </div>
+        </>
     )
 }

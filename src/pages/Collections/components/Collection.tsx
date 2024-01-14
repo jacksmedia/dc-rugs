@@ -31,14 +31,13 @@ export const Collection = (props: {
     }
 
     return (
-        <div>
-            <h2>
-                {collection.name}
-                <div>
-                    <small>{collection.ticker}</small>
-                </div>
-            </h2>
+        <div className="top-container">
             <div>
+                <h2>{collection.name}</h2>
+                <small>{collection.ticker}</small>
+            </div>
+            
+            <div className="responsive-container">
                 <OwnedNfts collection={collection.ticker}/>
             </div>
         </div>

@@ -5,18 +5,16 @@ import {environment} from "../../../config/config.tsx";
 
 export const Header = () => {
     return (
-        <header>
-            <ul>
-                <li>
-                    <Link to={RouteNamesEnum.home}>
-                        Home
-                    </Link>
-                </li>
-                <li>
-                    <Userbar/>
-                    {import.meta.env.DEV ? ` [${environment}]` : null}
-                </li>
-            </ul>
+        <header className="header-box">
+            <div>
+                <Link to={RouteNamesEnum.home}>
+                    Home
+                </Link>
+            </div>
+            <div>
+                <Userbar/>
+                {import.meta.env.DEV ? ` [${environment}]` : null}
+            </div>
         </header>
     )
 }

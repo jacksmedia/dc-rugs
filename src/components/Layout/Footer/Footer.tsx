@@ -1,5 +1,7 @@
 export const Footer = () => {
     return (
-        <div>Footer</div>
+        <div className="footer-box">
+            Footer w Attribution & Disclaimer links
+        </div>
     )
 }

@@ -28,38 +28,36 @@ const commonProps: CommonPropsType = {
 
 export const Login = () => {
     return (
-        <div>
+        <div className="login-panel">
             <h1>
-                Login with your wallet
+                Login with your MX wallet
             </h1>
-            <div>
-                <WalletConnectLoginButton
-                    loginButtonText="xPortal"
-                    {...commonProps}
-                />
-                <ExtensionLoginButton
-                    loginButtonText="Browser extension"
-                    {...commonProps}
-                />
-                <WebWalletLoginButton
-                    loginButtonText="Web Wallet"
-                    data-testid="webWalletLoginBtn"
-                    {...commonProps}
-                />
-                <LedgerLoginButton
-                    loginButtonText="Ledger"
-                    {...commonProps}
-                />
-                <XaliasLoginButton
-                    loginButtonText="xAlias"
-                    data-testid="xAliasLoginBtn"
-                    {...commonProps}
-                />
-                <OperaWalletLoginButton
-                    loginButtonText="Opera Crypto Wallet"
-                    {...commonProps}
-                />
-            </div>
+            <WalletConnectLoginButton
+                loginButtonText="xPortal"
+                {...commonProps}
+            />
+            <ExtensionLoginButton
+                loginButtonText="Browser extension"
+                {...commonProps}
+            />
+            <WebWalletLoginButton
+                loginButtonText="Web Wallet"
+                data-testid="webWalletLoginBtn"
+                {...commonProps}
+            />
+            <LedgerLoginButton
+                loginButtonText="Ledger"
+                {...commonProps}
+            />
+            <XaliasLoginButton
+                loginButtonText="xAlias"
+                data-testid="xAliasLoginBtn"
+                {...commonProps}
+            />
+            <OperaWalletLoginButton
+                loginButtonText="Opera Crypto Wallet"
+                {...commonProps}
+            />
         </div>
     );
 };
