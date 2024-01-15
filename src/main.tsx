@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/scss/styles.scss'
 import {DappProvider} from "@multiversx/sdk-dapp/wrappers"
 import {apiTimeout, environment, walletConnectV2ProjectId} from "./config/config.tsx"
