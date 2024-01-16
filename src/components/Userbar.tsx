@@ -1,5 +1,3 @@
-import {Username} from "./Username.tsx";
-import {Link} from "react-router-dom";
 import {RouteNamesEnum} from "../routes/routeNames.enum.tsx";
 import {useGetAccountInfo, useGetIsLoggedIn} from "@multiversx/sdk-dapp/hooks";
 import {logout} from "@multiversx/sdk-dapp/utils";
@@ -11,7 +9,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export const Userbar = () => {
     const isLoggedIn = useGetIsLoggedIn()
-    const {account} = useGetAccountInfo()
+    // const {account} = useGetAccountInfo()
 
     const handleLogout = (event: React.MouseEvent<HTMLAnchorElement>) => {
         event.preventDefault()
@@ -28,7 +26,7 @@ export const Userbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-          <Nav.Link to={RouteNamesEnum.login}>
+          <Nav.Link href={RouteNamesEnum.login}>
               Login
           </Nav.Link>
           </Nav>

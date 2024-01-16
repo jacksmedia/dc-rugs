@@ -1,4 +1,3 @@
-import {RouteNamesEnum} from "../../../routes/routeNames.enum.tsx";
 import {Userbar} from "../../Userbar.tsx";
 import {environment} from "../../../config/config.tsx";
 
