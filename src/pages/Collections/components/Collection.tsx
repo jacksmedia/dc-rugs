@@ -1,6 +1,8 @@
 import {useGetCollection} from "../../../hooks/useGetCollection.tsx";
 import {useEffect} from "react";
 import {OwnedNfts} from "./OwnedNfts.tsx";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 export const Collection = (props: {
     ticker: string;
@@ -31,15 +33,15 @@ export const Collection = (props: {
     }
 
     return (
-        <div className="top-container mx-auto mt-5">
-            <div>
-                <h2>{collection.name}</h2>
+        <Container className="mx-auto">
+            <Row className="mt-5">
+                <h2 className="mt-5">{collection.name}</h2>
                 <small>{collection.ticker}</small>
-            </div>
+            </Row>
             
-            <div className="responsive-container">
+            <Row className="responsive-container">
                 <OwnedNfts collection={collection.ticker}/>
-            </div>
-        </div>
+            </Row>
+        </Container>
     )
 }

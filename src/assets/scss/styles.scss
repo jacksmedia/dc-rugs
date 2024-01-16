@@ -21,7 +21,7 @@ html { // every page gets this
     min-height: 70vh;
     height: 70vh;
 
-    background: linear-gradient(cornsilk, mediumblue);
+    background: linear-gradient(cornsilk, #0d6ffd);
     border-radius: 3rem;
     padding: 2rem;
         & :not(h1) { // to grab the login buttons

@@ -24,13 +24,13 @@ export const OwnedNfts = (props: {
     }
 
     return (
-        <div>
+        <>
             <h3>Owned NFTs</h3>
             {accountNfts.map((nft) => {
                 return (
                     <Nft key={nft.identifier} nft={nft}/>
                 )
             })}
-        </div>
+        </>
     )
 }

@@ -22,9 +22,19 @@ export const Userbar = () => {
 
     if (!isLoggedIn) {
       return (
-          <Link to={RouteNamesEnum.login}>
+        <Navbar expand="lg" className="bg-body-light">
+        <Container>
+        <Navbar.Brand href="#home">Rug's Royalties</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+          <Nav.Link to={RouteNamesEnum.login}>
               Login
-          </Link>
+          </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+        </Container>
+      </Navbar>
       )
     }
     return (
@@ -37,14 +47,14 @@ export const Userbar = () => {
             <Nav.Link to={RouteNamesEnum.home}>Home</Nav.Link>
             <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">Read More</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
-                Another action
+                FAQ
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Disclaimer</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                Separated link
+                Join Discord
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

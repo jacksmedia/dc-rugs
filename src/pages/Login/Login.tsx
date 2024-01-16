@@ -28,7 +28,7 @@ const commonProps: CommonPropsType = {
 
 export const Login = () => {
     return (
-        <div className="d-flex container login-panel mx-auto align-items-center">
+        <div className="d-flex container login-panel mx-auto align-items-center mt-5">
             <h1>
                 Login with your MX wallet
             </h1>
