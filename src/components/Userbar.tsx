@@ -1,5 +1,5 @@
 import {RouteNamesEnum} from "../routes/routeNames.enum.tsx";
-import {useGetAccountInfo, useGetIsLoggedIn} from "@multiversx/sdk-dapp/hooks";
+import {useGetIsLoggedIn} from "@multiversx/sdk-dapp/hooks";
 import {logout} from "@multiversx/sdk-dapp/utils";
 import React from "react";
 import Container from 'react-bootstrap/Container';
