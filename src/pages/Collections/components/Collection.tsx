@@ -31,7 +31,7 @@ export const Collection = (props: {
     }
 
     return (
-        <div className="top-container">
+        <div className="top-container mx-auto mt-5">
             <div>
                 <h2>{collection.name}</h2>
                 <small>{collection.ticker}</small>
