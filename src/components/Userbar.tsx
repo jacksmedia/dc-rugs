@@ -9,7 +9,6 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export const Userbar = () => {
     const isLoggedIn = useGetIsLoggedIn()
-    {/* const {account} = useGetAccountInfo() */}
 
     const handleLogout = (event: React.MouseEvent<HTMLAnchorElement>) => {
         event.preventDefault()
