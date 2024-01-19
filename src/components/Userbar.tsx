@@ -19,7 +19,7 @@ export const Userbar = () => {
 
     if (!isLoggedIn) {
       return (
-        <Navbar expand="lg" className="bg-body-light">
+        <Navbar expand="lg" className="bar-bg">
         <Container>
         <Navbar.Brand href="#home">Rug's Royalties</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

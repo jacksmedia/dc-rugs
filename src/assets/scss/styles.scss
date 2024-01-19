@@ -9,7 +9,7 @@ html { // every page gets this
     min-height: 100vh;
     height: 100vh;
     
-    background: linear-gradient(snow,cornsilk, snow);
+    background: url('../images/bg-0.jpg');
 }
 
 .login-panel { // MultiversX login buttons panel
@@ -69,8 +69,14 @@ html { // every page gets this
 }
 
 .footer-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 7vh;
-    min-width: 100vw;
+    min-width: 100vw;}
+.bar-bg    {
+    background-color: cornsilk;
+}
+.main {
     background: rgba($color: #000000, $alpha: 0.0);
-    // background: crimson;
 }

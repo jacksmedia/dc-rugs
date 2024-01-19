@@ -11,8 +11,9 @@ export const Layout = ({children}: PropsWithChildren) => {
     return (
         <div>
             <Header/>
-            <main>
+            <main className="main">
                 <AuthenticatedRoutesWrapper
+                    className="main"
                     routes={routes}
                     unlockRoute={`${RouteNamesEnum.login}${search}`}
                 >
