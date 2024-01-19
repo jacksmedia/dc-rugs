@@ -13,7 +13,6 @@ export const Layout = ({children}: PropsWithChildren) => {
             <Header/>
             <main className="main">
                 <AuthenticatedRoutesWrapper
-                    className="main"
                     routes={routes}
                     unlockRoute={`${RouteNamesEnum.login}${search}`}
                 >
