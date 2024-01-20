@@ -21,7 +21,6 @@ export const Userbar = () => {
       return (
         <Navbar expand="lg" className="bar-bg">
         <Container>
-        <Navbar.Brand href="#home">Rug's Royalties</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -30,6 +29,7 @@ export const Userbar = () => {
           </Nav.Link>
           </Nav>
         </Navbar.Collapse>
+        <Navbar.Brand href={RouteNamesEnum.landing}>Rug's Royalties</Navbar.Brand>
         </Container>
       </Navbar>
       )
@@ -41,7 +41,7 @@ export const Userbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href={RouteNamesEnum.home}>Home</Nav.Link>
+            <Nav.Link href={RouteNamesEnum.landing}>Home</Nav.Link>
             <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Read More</NavDropdown.Item>

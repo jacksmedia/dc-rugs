@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Pixelify';
+    src: url('./PixelifySans.tff');
+}
+
+* {
+    font-family:  'Pixelify';
+}
+
 html { // every page gets this
     display: flex;
     flex-flow: column nowrap;
@@ -10,6 +19,7 @@ html { // every page gets this
     
     background: url('../images/bg-0.jpg');
 }
+
 
 .login-panel { // MultiversX login buttons panel
     flex-flow: column nowrap;
