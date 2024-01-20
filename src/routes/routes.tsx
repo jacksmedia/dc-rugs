@@ -1,4 +1,5 @@
 import {Login} from "../pages/Login/Login.tsx"
+import {Landing} from "../pages/Landing/Landing.tsx"
 import {RouteNamesEnum} from "./routeNames.enum.tsx"
 import {RouteType} from "@multiversx/sdk-dapp/types"
 import {PageNotFound} from "../pages/PageNotFound/PageNotFound.tsx"
@@ -9,6 +10,10 @@ export const routes: RouteType[] = [
         path: RouteNamesEnum.home,
         component: Collections,
         authenticatedRoute: true,
+    },
+    {
+        path: RouteNamesEnum.landing,
+        component: Landing,
     },
     {
         path: RouteNamesEnum.login,
