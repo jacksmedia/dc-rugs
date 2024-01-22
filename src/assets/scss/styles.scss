@@ -1,3 +1,6 @@
+@import url(_utilities.scss);
+@import "node_modules/bootstrap/scss/bootstrap";
+
 @font-face {
     font-family: 'Pixelify';
     src: url('./PixelifySans.tff');
@@ -22,6 +25,37 @@ html { // every page gets this
     background-repeat: no-repeat;
     background-color: cornsilk;
 }
+main {
+    background-color: transparent !important;
+}
+// Add a transparent background utility
+.bg-transparent {
+  background-color: transparent !important;
+}
+// for Navbars
+.bar-bg    {
+    background-color: cornsilk;
+}
+
+.center-panel {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    vertical-align: middle;
+    height: 80vh;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    background: transparent;
+    padding: 10px;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid olive;
+    padding: 10px;
+}
 
 
 .login-panel { // MultiversX login buttons panel
@@ -45,12 +79,10 @@ html { // every page gets this
     }
 }
 .top-container {
-    background: white;
     max-width: 80vw;  // 80% of the viewport width
     max-height: 82vh; // 80% of the viewport height
 }
 .responsive-container {
-    background: white;
     max-width: 80vw;  // 80% of the viewport width
     max-height: 72vh; // 80% of the viewport height
     display: flex;
@@ -75,7 +107,6 @@ html { // every page gets this
 .header-box {
     min-height: 11vh;
     min-width: 100vw;
-    background: rgba($color: #000000, $alpha: 0.0);
     padding-top: 3rem;
     // background: crimson;
 }
@@ -85,10 +116,5 @@ html { // every page gets this
     align-items: center;
     justify-content: center;
     min-height: 7vh;
-    min-width: 100vw;}
-.bar-bg    {
-    background-color: cornsilk;
-}
-.main {
-    background: rgba($color: #000000, $alpha: 0.0);
+    min-width: 100vw;
 }
