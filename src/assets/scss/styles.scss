@@ -1,120 +1,88 @@
-@import url(_utilities.scss);
+@import "variables";
+@import "fonts";
 @import "node_modules/bootstrap/scss/bootstrap";
 
-@font-face {
-    font-family: 'Pixelify';
-    src: url('./PixelifySans.tff');
+body {
+  background: cornsilk url('../images/bg-0.jpg') no-repeat center;
 }
 
-* {
-    font-family:  'Pixelify';
-}
-
-html { // every page gets this
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: normal;
-    
-    max-height: 100vh;
-    min-height: 100vh;
-    height: 100vh;
-    
-    background: url('../images/bg-0.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: cornsilk;
-}
 main {
-    background-color: transparent !important;
-}
-// Add a transparent background utility
-.bg-transparent {
-  background-color: transparent !important;
-}
-// for Navbars
-.bar-bg    {
-    background-color: cornsilk;
+  > .container {
+    background-color: rgba($white, 0.5);
+  }
 }
 
 .center-panel {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    vertical-align: middle;
-    height: 80vh;
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    background: transparent;
-    padding: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  vertical-align: middle;
+  height: 80vh;
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }
 
 .center {
-    margin: auto;
-    width: 50%;
-    border: 3px solid olive;
-    padding: 10px;
+  margin: auto;
+  width: 50%;
+  border: 3px solid olive;
+  padding: 10px;
 }
-
 
 .login-panel { // MultiversX login buttons panel
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    
-    max-width: 75vw;
-    max-height: 70vh;
-    min-height: 70vh;
-    height: 70vh;
+  flex-flow: column nowrap;
+  justify-content: space-around;
 
-    background: linear-gradient(cornsilk, #0d6ffd);
-    border-radius: 3rem;
-    padding: 2rem;
-        & :not(h1) { // to grab the login buttons
-            font-size: larger;
-            // background-color: black;
-            & :hover {
-                // background-color: blue;
-            }
+  max-width: 75vw;
+  max-height: 70vh;
+  min-height: 70vh;
+  height: 70vh;
+
+  background: linear-gradient($cornsilk, $primary);
+  border-radius: 3rem;
+  padding: 2rem;
+
+  & :not(h1) { // to grab the login buttons
+    font-size: larger;
+    // background-color: black;
+    & :hover {
+      // background-color: blue;
     }
+  }
 }
+
 .top-container {
-    max-width: 80vw;  // 80% of the viewport width
-    max-height: 82vh; // 80% of the viewport height
+  max-width: 80vw; // 80% of the viewport width
+  max-height: 82vh; // 80% of the viewport height
 }
-.responsive-container {
-    max-width: 80vw;  // 80% of the viewport width
-    max-height: 72vh; // 80% of the viewport height
-    display: flex;
-    flex-wrap: wrap;  // enables wrapping of items
-    align-items: flex-start; // aligns items to the start of the flex container
-    justify-content: flex-start; // aligns items to the start on the main axis
-    overflow-y: auto; // adds a scrollbar if content overflows along the y-axis
-  
-    // You may want to add padding, margins, or other styles as needed
-  }
-  
-  .item {
-    margin: 0.5rem;
-    width: calc(20% - 1rem); // Trial width
 
-  
-    .caption { // Styles for the caption of each NFT
-      text-align: center; 
-    }
+.responsive-container {
+  max-width: 80vw; // 80% of the viewport width
+  max-height: 72vh; // 80% of the viewport height
+  display: flex;
+  flex-wrap: wrap; // enables wrapping of items
+  align-items: flex-start; // aligns items to the start of the flex container
+  justify-content: flex-start; // aligns items to the start on the main axis
+  overflow-y: auto; // adds a scrollbar if content overflows along the y-axis
+
+  // You may want to add padding, margins, or other styles as needed
+}
+
+.item {
+  margin: 0.5rem;
+  width: calc(20% - 1rem); // Trial width
+
+
+  .caption { // Styles for the caption of each NFT
+    text-align: center;
   }
+}
 
 .header-box {
-    min-height: 11vh;
-    min-width: 100vw;
-    padding-top: 3rem;
-    // background: crimson;
-}
-
-.footer-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 7vh;
-    min-width: 100vw;
+  min-height: 11vh;
+  min-width: 100vw;
+  padding-top: 3rem;
+  // background: crimson;
 }

@@ -1,9 +1,9 @@
 export const Footer = () => {
     return (
-        <div className="container-fluid text-center fixed-bottom footer-box bar-bg">
-            <p>
+        <footer className="container-fluid fixed-bottom bg-cornsilk d-flex justify-content-center align-items-center p-2">
+            <div>
                 Footer w Attribution & Disclaimer links
-            </p>
-        </div>
+            </div>
+        </footer>
     )
 }
