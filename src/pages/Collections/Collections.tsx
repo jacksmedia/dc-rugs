@@ -20,8 +20,8 @@ export const Collections = () => {
     }
 
     return (
-        <div>
+        <>
             {whitelistedCollections.map((collection) => <Collection key={collection} ticker={collection}/>)}
-        </div>
+        </>
     )
 }

@@ -9,7 +9,7 @@ import {RouteNamesEnum} from "../../routes/routeNames.enum.tsx";
 export const Layout = ({children}: PropsWithChildren) => {
     const {search} = useLocation();
     return (
-        <div>
+        <>
             <Header/>
             <main className="main">
                 <AuthenticatedRoutesWrapper
@@ -20,6 +20,6 @@ export const Layout = ({children}: PropsWithChildren) => {
                 </AuthenticatedRoutesWrapper>
             </main>
             <Footer/>
-        </div>
+        </>
     );
 };
