@@ -21,7 +21,7 @@ export const Userbar = () => {
     return (
         <Navbar expand="lg" className="container-fluid">
             <Container className="d-flex">
-                <Navbar.Toggle aria-cont rols="basic-navbar-nav"/>
+                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Item>
