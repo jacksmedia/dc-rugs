@@ -30,6 +30,17 @@ export const Userbar = () => {
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
+                            {isLoggedIn ? (
+                                <Nav.Link onClick={handleLogout}>
+                                    Logout
+                                </Nav.Link>
+                            ) : (
+                                <Nav.Link href={RouteNamesEnum.login}>
+                                    Login
+                                </Nav.Link>
+                            )}
+                        </Nav.Item>
+                        <Nav.Item>
                             <NavDropdown title="Read More" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">
                                     FAQ
@@ -42,17 +53,6 @@ export const Userbar = () => {
                                     Join Discord
                                 </NavDropdown.Item>
                             </NavDropdown>
-                        </Nav.Item>
-                        <Nav.Item>
-                            {isLoggedIn ? (
-                                <Nav.Link onClick={handleLogout}>
-                                    Logout
-                                </Nav.Link>
-                            ) : (
-                                <Nav.Link href={RouteNamesEnum.login}>
-                                    Login
-                                </Nav.Link>
-                            )}
                         </Nav.Item>
                     </Nav>
                     {import.meta.env.DEV ? (
