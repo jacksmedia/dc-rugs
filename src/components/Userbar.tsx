@@ -62,7 +62,7 @@ export const Userbar = () => {
                     ) : null}
                 </Navbar.Collapse>
                 <Navbar.Brand href="#home">
-                    Rug's Royalties
+                    &nbsp;&nbsp;Rug's Royalties
                 </Navbar.Brand>
             </Container>
         </Navbar>
