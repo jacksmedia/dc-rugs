@@ -53,6 +53,15 @@ main {
   }
 }
 
+.white-text {
+  font-size: 3rem;
+  color: aliceblue;
+  text-shadow: 1px 1px snow;
+  text-shadow: -1px -1px snow;
+  text-shadow: 3px -3px black;
+  text-shadow: -3px 3px black;
+}
+
 .top-container {
   max-width: 80vw; // 80% of the viewport width
   max-height: 82vh; // 80% of the viewport height
