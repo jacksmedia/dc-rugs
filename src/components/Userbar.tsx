@@ -19,12 +19,9 @@ export const Userbar = () => {
     };
 
     return (
-        <Navbar expand="lg">
-            <Container>
-                <Navbar.Brand href="#home">
-                    Rug's Royalties
-                </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+        <Navbar expand="lg" className="container-fluid">
+            <Container className="d-flex">
+                <Navbar.Toggle aria-cont rols="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Item>
@@ -33,18 +30,15 @@ export const Userbar = () => {
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                            <NavDropdown title="Read More" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">
-                                    Read More
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">
                                     FAQ
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">
+                                <NavDropdown.Item href="#action/3.2">
                                     Disclaimer
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider/>
-                                <NavDropdown.Item href="#action/3.4">
+                                <NavDropdown.Item href="#action/3.3">
                                     Join Discord
                                 </NavDropdown.Item>
                             </NavDropdown>
@@ -67,6 +61,9 @@ export const Userbar = () => {
                         </Navbar.Text>
                     ) : null}
                 </Navbar.Collapse>
+                <Navbar.Brand href="#home">
+                    Rug's Royalties
+                </Navbar.Brand>
             </Container>
         </Navbar>
     )
