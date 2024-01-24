@@ -12,6 +12,11 @@ main {
   }
 }
 
+.red-button {
+  background-color: #E84747;
+  font-size: 2rem;
+}
+
 .center-panel {
   display: flex;
   flex-flow: column nowrap;
@@ -20,14 +25,12 @@ main {
   height: 80vh;
   margin: auto;
   width: 50%;
-  border: 3px solid green;
   padding: 10px;
 }
 
 .center {
   margin: auto;
   width: 50%;
-  border: 3px solid olive;
   padding: 10px;
 }
 
@@ -54,7 +57,6 @@ main {
 }
 
 .white-text {
-  font-size: 3rem;
   color: aliceblue;
   text-shadow: 1px 1px snow;
   text-shadow: -1px -1px snow;
