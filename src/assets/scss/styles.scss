@@ -68,7 +68,7 @@ main {
   min-height: 70vh;
   height: 70vh;
 
-  background: linear-gradient($cornsilk, $primary);
+  background: linear-gradient($cornsilk, $faded-primary);
   border-radius: 3rem;
   padding: 2rem;
 
@@ -103,7 +103,7 @@ main {
 .nft-border-box {
   border: black 2px dotted;
   border-radius: 10px;
-  
+
 }
 
 .item {
