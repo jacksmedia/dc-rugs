@@ -4,6 +4,28 @@
 
 body {
   background: cornsilk url('../images/bg-0.jpg') no-repeat center;
+
+  .dapp-core-component__main__btn {
+    @extend .btn;
+  }
+
+  .dapp-core-component__main__btn:not(.dapp-core-component__dappModalStyles__dappModalCloseButton) {
+    @extend .btn-primary;
+    @extend .btn-lg;
+    @extend .d-block;
+  }
+
+  .dapp-core-component__ledgerConnectStyles__login-connect-container-icon {
+    background-color: $white;
+  }
+
+  [class$="modal-dialog-content"] {
+    @extend .text-bg-dark;
+  }
+
+  [class$="modal-close-button"] {
+    color: $white;
+  }
 }
 
 main {
@@ -12,9 +34,12 @@ main {
   }
 }
 
-.red-button {
+.btn {
   background-color: #E84747;
-  font-size: 2rem;
+}
+.btn:hover {
+  background-color: #fff8dc;
+  color: red;
 }
 
 .center-panel {
@@ -49,10 +74,6 @@ main {
 
   & :not(h1) { // to grab the login buttons
     font-size: larger;
-    // background-color: black;
-    & :hover {
-      // background-color: blue;
-    }
   }
 }
 
@@ -77,8 +98,12 @@ main {
   align-items: flex-start; // aligns items to the start of the flex container
   justify-content: flex-start; // aligns items to the start on the main axis
   overflow-y: auto; // adds a scrollbar if content overflows along the y-axis
+}
 
-  // You may want to add padding, margins, or other styles as needed
+.nft-border-box {
+  border: black 2px dotted;
+  border-radius: 10px;
+  
 }
 
 .item {

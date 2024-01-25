@@ -8,7 +8,7 @@ export const Nft = (props: {
     const {nft} = props;
 
     return (
-        <Col>
+        <Col className="nft-border-box">
             {nft.media ? (
                 <img src={nft.media[0].thumbnailUrl} alt="" 
                 style={{width: '70px', maxWidth: '30vw'}}/>

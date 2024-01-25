@@ -44,7 +44,7 @@ export const ButtonTxRug = (props: {
     }
 
     return (
-        <button onClick={sendNft} disabled={isRugging}>
+        <button onClick={sendNft} disabled={isRugging} className="btn">
             Rug this NFT
         </button>
     )

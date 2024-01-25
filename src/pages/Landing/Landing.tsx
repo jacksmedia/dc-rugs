@@ -6,7 +6,7 @@ export const Landing = () => {
         <div className='center-panel bg-transparent text-end'>
             <h1 className='white-text three-rem'>Welcome to Rug's Royalties</h1>
             <a href={RouteNamesEnum.login}>
-                <Button className='center red-button'>
+                <Button className='center btn'>
                     Login
                 </Button>
             </a>
