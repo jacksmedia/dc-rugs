@@ -25,7 +25,7 @@ export const Userbar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Item>
-                            <Nav.Link href={RouteNamesEnum.landing}>
+                            <Nav.Link href={RouteNamesEnum.home}>
                                 Home
                             </Nav.Link>
                         </Nav.Item>
@@ -61,7 +61,7 @@ export const Userbar = () => {
                         </Navbar.Text>
                     ) : null}
                 </Navbar.Collapse>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand href="/">
                     &nbsp;&nbsp;Rug's Royalties
                 </Navbar.Brand>
             </Container>

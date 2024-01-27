@@ -8,16 +8,16 @@ import {Collections} from "../pages/Collections/Collections.tsx";
 export const routes: RouteType[] = [
     {
         path: RouteNamesEnum.home,
-        component: Collections,
-        authenticatedRoute: true,
-    },
-    {
-        path: RouteNamesEnum.landing,
         component: Landing,
     },
     {
         path: RouteNamesEnum.login,
         component: Login,
+    },
+    {
+        path: RouteNamesEnum.collections,
+        component: Collections,
+        authenticatedRoute: true,
     },
     {
         path: RouteNamesEnum.notFound,

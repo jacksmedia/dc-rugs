@@ -1,6 +1,6 @@
 export enum RouteNamesEnum {
     home = '/',
     login = '/login',
-    notFound = '/404',
-    landing = "landing"
+    collections = '/collections',
+    notFound = '/404'
 }
