@@ -3,7 +3,7 @@ import {Landing} from "../pages/Landing/Landing.tsx"
 import {RouteNamesEnum} from "./routeNames.enum.tsx"
 import {RouteType} from "@multiversx/sdk-dapp/types"
 import {PageNotFound} from "../pages/PageNotFound/PageNotFound.tsx"
-import {Collections} from "../pages/Collections/Collections.tsx";
+import {Collections} from "../pages/Collections/Collections.tsx"
 
 export const routes: RouteType[] = [
     {

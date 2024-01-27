@@ -1,3 +1,5 @@
+import {RouteNamesEnum} from "../../routes/routeNames.enum.tsx"
+
 import type {
     ExtensionLoginButtonPropsType,
     LedgerLoginButtonPropsType,
@@ -22,7 +24,7 @@ type CommonPropsType =
     | WalletConnectLoginButtonPropsType;
 
 const commonProps: CommonPropsType = {
-    callbackRoute: '/',
+    callbackRoute: RouteNamesEnum.collections,
     nativeAuth: true,
 };
 
