@@ -42,14 +42,14 @@ export const Userbar = () => {
                         </Nav.Item>
                         <Nav.Item>
                             <NavDropdown title="Read More" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">
+                                <NavDropdown.Item href={RouteNamesEnum.faq}>
                                     FAQ
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">
+                                <NavDropdown.Item href={RouteNamesEnum.disclaimer}>
                                     Disclaimer
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider/>
-                                <NavDropdown.Item href="#action/3.3">
+                                <NavDropdown.Item href={RouteNamesEnum.faq}>
                                     Join Discord
                                 </NavDropdown.Item>
                             </NavDropdown>

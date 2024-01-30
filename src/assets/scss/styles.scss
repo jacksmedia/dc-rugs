@@ -28,14 +28,18 @@ body {
   }
 }
 
-main {
+main { //background opacity rules
   > .container {
-    background-color: rgba($white, 0.5);
+    background-color: rgba($white, 0.7);
+  }
+  > div > .container { //landing page background opacity rules
+    background-color: rgba($white, 0.7);
+    border-radius: 2rem;
   }
 }
 
 .btn {
-  background-color: #E84747;
+  background-color: $brand-red;
 }
 .btn:hover {
   background-color: #fff8dc;
@@ -78,7 +82,7 @@ main {
 }
 
 .white-text {
-  color: aliceblue;
+  color: $brand-red;
   text-shadow: 1px 1px snow;
   text-shadow: -1px -1px snow;
   text-shadow: 3px -3px black;
